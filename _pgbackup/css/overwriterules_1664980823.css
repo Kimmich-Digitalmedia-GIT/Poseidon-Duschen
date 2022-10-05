@@ -5,10 +5,67 @@ OVERWRITE SETTINGS [ Use this stylesheet for overwriting Reginalds default stuff
 	- Document:    Reginald's Overwrite CSS
 	- Version:     1.01 beta
 	- Date:        December 2018
-	- Author:      Kimmich DigitalMedia   
-*/
+	- Author:      Kimmich DigitalMedia */
 /* Alternative FONT strategy for your Project do here
 --------------------------------------------------------------------------- */
+We are trying to self-host our default FONT Roboto Condensed - so we load it first
+For more info - and different FONTs: https://google-webfonts-helper.herokuapp.com/fonts
+------------------------------------------------------------------------------------------------ */
+
+/* roboto-condensed-300 - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../FONTs/roboto-condensed-v18-latin-300.eot');
+
+    /* IE9 Compat Modes */
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'),
+       url('../FONTs/roboto-condensed-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../FONTs/roboto-condensed-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../FONTs/roboto-condensed-v18-latin-300.svg#RobotoCondensed') format('svg');
+
+    /* Legacy iOS */
+}
+
+/* roboto-condensed-regular - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../FONTs/roboto-condensed-v18-latin-regular.eot');
+
+    /* IE9 Compat Modes */
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+       url('../FONTs/roboto-condensed-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../FONTs/roboto-condensed-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../FONTs/roboto-condensed-v18-latin-regular.svg#RobotoCondensed') format('svg');
+
+    /* Legacy iOS */
+}
+
+/* roboto-condensed-700 - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../FONTs/roboto-condensed-v18-latin-700.eot');
+
+    /* IE9 Compat Modes */
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+       url('../FONTs/roboto-condensed-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../FONTs/roboto-condensed-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../FONTs/roboto-condensed-v18-latin-700.svg#RobotoCondensed') format('svg');
+
+    /* Legacy iOS */
+}
+
 html {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
@@ -23,10 +80,9 @@ h6 {
     font-weight: 700;
 }
 
-/* Uncomment/Adjust the following lines for having a light theme nav on mobile 
+/* Uncomment/Adjust the following lines for having a light theme nav on mobile
    --------------------------------------------------------------------------- */
-/*
-.mean-container .mean-bar {
+/* .mean-container .mean-bar {
     background: #ffffff;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.18), 0 5px 9px 0 rgba(0, 0, 0, 0.15);
 }
@@ -69,8 +125,7 @@ h6 {
 
 .mean-container .mean-nav ul li a.mean-expand:hover {
     background: #eceff1;
-}
-*/
+} */
 /* -------------------------------- 
    End of light theme nav on mobile */
 /* Uncomment/Adjust the following lines for having a Brand in Menubar that shrinks 
@@ -94,7 +149,6 @@ h6 {
 .magicnav--light ul li,
 .magicnav--dark ul li {
     display: inline-flex;
-    max-width: 270px;
 }
 
 .magicnav--light ul li a,
@@ -119,7 +173,7 @@ h6 {
     position: fixed;
     top: 0;
     left: 20px;
-    background-image: url('../img/tmck-logo-web.png');
+    background-image: url('../img/logo/tmck-logo-web.png');
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -133,6 +187,7 @@ h6 {
 
     .li-padding-remove {
         padding: 15px 0px 15px 0px !important;
+        width: 100%;
     }
 
     .company--brand_desktop {
@@ -142,7 +197,7 @@ h6 {
         height: 100px;
         width: 270px;
         pointer-events: none;
-        background-image: url('../img/tmck-logo-web.png');
+        background-image: url('../img/logo/tmck-logo-web.png');
     }
 
     .company--brand_mobile {
@@ -261,8 +316,7 @@ h6 {
    End of Back-To-Top */
 /* Uncomment/Adjust the following lines for changing the MagicTable stuff 
    ------------------------------------------------------------------------------- */
-/*
-.tmg-table th,
+/* .tmg-table th,
 .tmg-table td:before {
     color: #ce93d8;
     margin-right: 10px;
@@ -277,8 +331,7 @@ h6 {
         width: 7rem;
         text-align: center;
     }
-}
-*/
+} */
 /* --------------------- 
    End of MagicTable */
 /* We need a reverse system */
@@ -289,32 +342,13 @@ h6 {
 }
 
 /* Some list-styling */
-.tmg--list ul {
-    width: 100%;
+.tmg--list {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .tmg--list li {
     margin-bottom: 10px;
-    list-style-type: none;
-}
-
-.tmg--list li:before {
-    content: "·";
-    font-size: 40px;
-    vertical-align: middle;
-    line-height: 40px;
-}
-
-.tmg--listli {
-    list-style: none;
-    font-size: 20px;
-}
-
-li:before {
-    content: "·";
-    font-size: 50px;
-    vertical-align: middle;
-    line-height: 20px;
 }
 
 /* Font-Awesome additionals */
@@ -340,5 +374,13 @@ li:before {
 }
 
 .text-longshadow {
-    text-shadow: 1px 1px rgba(194, 109, 0, 0.3) , 2px 2px rgba(200, 113, 0, 0.314) , 3px 3px rgba(206, 115, 0, 0.328) , 4px 4px rgba(210, 118, 0, 0.342) , 5px 5px rgba(214, 120, 0, 0.356) , 6px 6px rgba(218, 122, 0, 0.37) , 7px 7px rgba(221, 124, 0, 0.384) , 8px 8px rgba(223, 125, 0, 0.398) , 9px 9px rgba(226, 127, 0, 0.412) , 10px 10px rgba(228, 128, 0, 0.426) , 11px 11px rgba(230, 129, 0, 0.44) , 12px 12px rgba(232, 130, 0, 0.454) , 13px 13px rgba(233, 131, 0, 0.468) , 14px 14px rgba(235, 132, 0, 0.482) , 15px 15px rgba(236, 132, 0, 0.496) , 16px 16px rgba(237, 133, 0, 0.51) , 17px 17px rgba(238, 134, 0, 0.524) , 18px 18px rgba(239, 134, 0, 0.538) , 19px 19px rgba(240, 135, 0, 0.552) , 20px 20px rgba(241, 135, 0, 0.566) , 21px 21px rgba(242, 136, 0, 0.58) , 22px 22px rgba(243, 136, 0, 0.594) , 23px 23px rgba(244, 137, 0, 0.608) , 24px 24px rgba(245, 137, 0, 0.622) , 25px 25px rgba(245, 138, 0, 0.636) , 26px 26px rgba(246, 138, 0, 0.65) , 27px 27px rgba(246, 138, 0, 0.664) , 28px 28px rgba(247, 139, 0, 0.678) , 29px 29px rgba(248, 139, 0, 0.692) , 30px 30px rgba(248, 139, 0, 0.706) , 31px 31px rgba(249, 139, 0, 0.72) , 32px 32px rgba(249, 140, 0, 0.734) , 33px 33px rgba(249, 140, 0, 0.748) , 34px 34px rgba(250, 140, 0, 0.762) , 35px 35px rgba(250, 140, 0, 0.776) , 36px 36px rgba(251, 141, 0, 0.79) , 37px 37px rgba(251, 141, 0, 0.804) , 38px 38px rgba(251, 141, 0, 0.818) , 39px 39px rgba(252, 141, 0, 0.832) , 40px 40px rgba(252, 141, 0, 0.846) , 41px 41px rgba(252, 142, 0, 0.86) , 42px 42px rgba(253, 142, 0, 0.874) , 43px 43px rgba(253, 142, 0, 0.888) , 44px 44px rgba(253, 142, 0, 0.902) , 45px 45px rgba(254, 142, 0, 0.916) , 46px 46px rgba(254, 142, 0, 0.93) , 47px 47px rgba(254, 142, 0, 0.944) , 48px 48px rgba(254, 143, 0, 0.958) , 49px 49px rgba(255, 143, 0, 0.972) , 50px 50px rgba(255, 143, 0, 0.986);
+    text-shadow: 1px 1px rgba(44, 4, 25, 0.2) , 2px 2px rgba(55, 5, 31, 0.21143) , 3px 3px rgba(63, 6, 36, 0.22286) , 4px 4px rgba(70, 7, 41, 0.23429) , 5px 5px rgba(76, 8, 44, 0.24571) , 6px 6px rgba(82, 8, 47, 0.25714) , 7px 7px rgba(86, 9, 50, 0.26857) , 8px 8px rgba(90, 9, 52, 0.28) , 9px 9px rgba(93, 9, 54, 0.29143) , 10px 10px rgba(96, 10, 56, 0.30286) , 11px 11px rgba(99, 10, 57, 0.31429) , 12px 12px rgba(102, 10, 59, 0.32571) , 13px 13px rgba(104, 11, 60, 0.33714) , 14px 14px rgba(106, 11, 61, 0.34857) , 15px 15px rgba(108, 11, 62, 0.36) , 16px 16px rgba(109, 11, 63, 0.37143) , 17px 17px rgba(111, 11, 64, 0.38286) , 18px 18px rgba(112, 11, 65, 0.39429) , 19px 19px rgba(114, 12, 66, 0.40571) , 20px 20px rgba(115, 12, 67, 0.41714) , 21px 21px rgba(116, 12, 67, 0.42857) , 22px 22px rgba(117, 12, 68, 0.44) , 23px 23px rgba(118, 12, 68, 0.45143) , 24px 24px rgba(119, 12, 69, 0.46286) , 25px 25px rgba(120, 12, 70, 0.47429) , 26px 26px rgba(121, 12, 70, 0.48571) , 27px 27px rgba(121, 12, 70, 0.49714) , 28px 28px rgba(122, 12, 71, 0.50857) , 29px 29px rgba(123, 13, 71, 0.52) , 30px 30px rgba(124, 13, 72, 0.53143) , 31px 31px rgba(124, 13, 72, 0.54286) , 32px 32px rgba(125, 13, 72, 0.55429) , 33px 33px rgba(125, 13, 73, 0.56571) , 34px 34px rgba(126, 13, 73, 0.57714) , 35px 35px rgba(126, 13, 73, 0.58857) , 36px 36px rgba(127, 13, 74, 0.6) , 37px 37px rgba(127, 13, 74, 0.61143) , 38px 38px rgba(128, 13, 74, 0.62286) , 39px 39px rgba(128, 13, 74, 0.63429) , 40px 40px rgba(129, 13, 75, 0.64571) , 41px 41px rgba(129, 13, 75, 0.65714) , 42px 42px rgba(129, 13, 75, 0.66857) , 43px 43px rgba(130, 13, 75, 0.68) , 44px 44px rgba(130, 13, 75, 0.69143) , 45px 45px rgba(130, 13, 76, 0.70286) , 46px 46px rgba(131, 13, 76, 0.71429) , 47px 47px rgba(131, 13, 76, 0.72571) , 48px 48px rgba(131, 13, 76, 0.73714) , 49px 49px rgba(132, 14, 76, 0.74857) , 50px 50px rgba(132, 14, 77, 0.76) , 51px 51px rgba(132, 14, 77, 0.77143) , 52px 52px rgba(132, 14, 77, 0.78286) , 53px 53px rgba(133, 14, 77, 0.79429) , 54px 54px rgba(133, 14, 77, 0.80571) , 55px 55px rgba(133, 14, 77, 0.81714) , 56px 56px rgba(133, 14, 77, 0.82857) , 57px 57px rgba(134, 14, 78, 0.84) , 58px 58px rgba(134, 14, 78, 0.85143) , 59px 59px rgba(134, 14, 78, 0.86286) , 60px 60px rgba(134, 14, 78, 0.87429) , 61px 61px rgba(134, 14, 78, 0.88571) , 62px 62px rgba(135, 14, 78, 0.89714) , 63px 63px rgba(135, 14, 78, 0.90857) , 64px 64px rgba(135, 14, 78, 0.92) , 65px 65px rgba(135, 14, 78, 0.93143) , 66px 66px rgba(135, 14, 79, 0.94286) , 67px 67px rgba(135, 14, 79, 0.95429) , 68px 68px rgba(136, 14, 79, 0.96571) , 69px 69px rgba(136, 14, 79, 0.97714) , 70px 70px rgba(136, 14, 79, 0.98857);
+}
+
+#google-map {
+    height: 25vh;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: top;
 }
