@@ -31,9 +31,9 @@
     <body>
         <header>
             <div class="company--brand_mobile"></div>
-            <nav class="tmg--fixed magicnav--dark z-depth-1-half" aria-label="Page Menu">
+            <nav class="tmg--fixed magicnav--dark z-depth-1-half" aria-label="Page Menu" data-pg-collapsed>
                 <ul class="sf-menu tmg--Flex">
-                    <li><a class="li-padding-remove"> <div id="brand--target_navigation" class="company--brand_desktop" title="Poseidon - Duschen von Flexotec"></div> </a>
+                    <li><a class="li-padding-remove"> <div id="brand--target_navigation" class="company--brand_desktop" title="TMCK 4.0 - Team mit cleveren Köpfen"></div> </a>
                     </li>
                     <li><a data-scroll-nav="1" class="sf-li">Poseidon Palace</a>
                     </li>
@@ -43,9 +43,9 @@
                     </li>
                     <li><a data-scroll-nav="5" class="sf-li">Raum</a>
                     </li>
-                    <li><a data-scroll-nav="6" class="sf-li">Pflege</a>
+                    <li data-pg-collapsed><a data-scroll-nav="6" class="sf-li">Pflege</a>
                     </li>
-                    <li><a data-scroll-nav="8" class="sf-li">Konfigurator/Shop</a>
+                    <li data-pg-collapsed><a data-scroll-nav="8" class="sf-li">KOnfigurator</a>
                     </li>
                     <li>
                         <a data-scroll-nav="9" class="sf-li">Kontakt</a>
@@ -57,7 +57,7 @@
             </div>
         </header>
         <main>
-            <section aria-label="Welcome" class="blue-grey darken-4 tmg--inner-tb-2 white-text" data-pg-name="Welcome" data-scroll-index="1">
+            <section aria-label="Welcome" class="blue-grey darken-4 tmg--inner-tb-2 white-text" data-pg-name="Welcome" data-scroll-index="1" data-pg-collapsed>
                 <article aria-labelledby="Article_Head_Main" class="tmg__area--width tmg__text-justifyCenter tmg--inner-2">
                     <h1 id="Article_Head_Main" class="tmg--outer-b-1 tmg--inner-lr-1" style=" 
 font-size: 250%;
@@ -65,7 +65,7 @@ font-size: 250%;
                     <p class="flow-text tmg--inner-2">PoseidonPalace Echtglasduschen sind rahmenlose Premiumduschen Made in Germany. Vom Aufmaß bis zur Fertigstellung werden Sie dabei begleitet, in vier einfachen Schritten eine individuelle, hochwertige und langlebige Dusche entstehen zu lassen. PoseidonPalace verbindet vorhandene Industriestandards mit feinster Glasmanufaktur.</p>
                 </article>
             </section>
-            <section aria-label="" class="blue-grey lighten-4 tmg__area" data-pg-name="Das Glas" data-scroll-index="3">
+            <section aria-label="" class="blue-grey lighten-4 tmg__area" data-pg-name="Das Glas" data-scroll-index="3" data-pg-collapsed>
                 <div class="tmg__module--Flex tmg-two-900">
                     <article class="padding--destroy" style="display: flex; object-fit: fill;">
                         <img src="img/article/das-glas.jpg" style="object-fit: cover; object-position: top right;"/>
@@ -86,10 +86,10 @@ Ihr Duschglas sein Erscheinungsbild lebenslang.</p>
                     </article>
                 </div>
             </section>
-            <section aria-label="" class="blue-grey lighten-4 tmg__area" data-scroll-index="4" data-pg-name="Der Beschlag">
+            <section aria-label="" class="blue-grey lighten-4 tmg__area" data-scroll-index="4" data-pg-name="Der Beschlag" data-pg-collapsed>
                 <div class="tmg__module--Flex tmg-two-900">
                     <article style="display: flex; object-fit: fill;" class="tmg--module__order-reverse">
-                        <img src="img/article/der-beschlag.jpg" style="object-fit: cover; object-position: top right;"/>
+                        <img src="img/article/mitarbeiter.jpg" style="object-fit: cover; object-position: top right;"/>
                     </article>
                     <article class="tmg--inner-2">
                         <h2 class="blue-grey-text text-darken-4 tmg--outer-b-1">Der Beschlag</h2>
@@ -103,61 +103,78 @@ an Hygiene wird garantiert.<br/></p>
                     </article>
                 </div>
             </section>
-            <section aria-label="" class="blue-grey lighten-4 tmg__area" data-pg-name="Die Raumsituation" data-scroll-index="5">
+            <section aria-label="" class="blue-grey lighten-5 tmg__area" data-pg-name="Maschinenpark" data-scroll-index="5" data-pg-collapsed>
                 <div class="tmg__module--Flex tmg-two-900">
                     <article style="display: flex; object-fit: fill;">
-                        <img src="img/article/der-raum.jpg" style="object-fit: cover; object-position: top left;"/>
+                        <img src="img/article/maschinenpark.jpg" style="object-fit: cover; object-position: top left;"/>
                     </article>
                     <article class="tmg--inner-2">
-                        <h2 class="blue-grey-text text-darken-4 tmg--outer-b-1">Die Raumsituation</h2>
-                        <p class="tmg--outer-b-2">Jede PoseidonPalace Echtglasdusche wird optimal an die Gegebenheiten angepasst
-und nach Ihren Wünschen gefertigt. So entstehen, gleich ob bei Renovierung oder Neubau,
-kleinen oder großen Bädern, immer individuelle Duschlösungen.</p>
+                        <h2 class="amber-text text-darken-3 tmg--outer-b-1">Maschinenpark</h2>
+                        <p class="tmg--outer-b-2">Unser Maschinenpark ist technisch auf dem neuesten Stand und besteht aus folgenden Maschinen:</p>
+                        <ul class="tmg--list">
+                            <li><b>Fräsen:<br/></b>POSmill H 800 U (5-Achsen), Verfahrwege: X670, Y820, Z600 <br/>
+                                <div>POSmill E 1100 (3-Achsen), Verfahrwege: X1100, Y600, Z510 (Aufspannfläche: X1300, Y600)
+</div>
+                            </li>
+                            <li><b>Drehen:</b> <br/>DMT CD 402, CNC/Zyklen-Drehmaschine mit 8-fach Scheibenrevolver Ø 230 x 1000
+                            </li>
+                            <li><b>Schleifen:</b><br/>ELB Flachschleifmaschine, NC-gesteuert, max. Schleifbereich: X700, Y550 <br/>ELB Flachschleifmaschine, NC-gesteuert, max. Schleifbereich: X500, Y250
+                            </li>
+                            <li><b>Drahterodieren:</b><br/>2 x AGIE Agiecut Challenge 3, Vollbadmaschine, Verfahrwege: X500, Y350, Z256
+                            </li>
+                            <li data-pg-collapsed><span style="font-size: calc(16.1499px + (2.35991 * ((100vw - 600px) / 1000))); letter-spacing: -0.025rem; display: inline !important;"><b>Pressentechnik:</b><br/>Hydraulische 4-Säulen Try-Out Presse 200 to., Tischfläche: X1840, Y1540</span>
+                            </li>
+                            <li><span style="font-size: calc(16.1499px + (2.35991 * ((100vw - 600px) / 1000))); letter-spacing: -0.025rem; display: inline !important;"><b>Startlochbohren:</b><br/>bes Startlocherodiermaschine S 32-3, Tischfläche: X200, Y300, Z350</span>
+                            </li>
+                        </ul>
                     </article>
                 </div>
             </section>
-            <section aria-label="" class="blue-grey lighten-5 tmg__area" data-pg-name="Qualität" data-scroll-index="6">
+            <section aria-label="" class="blue-grey lighten-5 tmg__area" data-pg-name="Qualität" data-scroll-index="6" data-pg-collapsed>
                 <div class="tmg__module--Flex tmg-two-900">
                     <article style="display: flex; object-fit: fill;" class="tmg--module__order-reverse">
-                        <img src="img/article/die-pflege.jpg" style="object-fit: cover; object-position: top left;"/>
+                        <img src="img/article/qualitaet.jpg" style="object-fit: cover; object-position: top left;"/>
                     </article>
                     <article class="tmg--inner-2">
-                        <h2 class="blue-grey-text text-darken-4 tmg--outer-b-1">Die Pflege</h2>
-                        <p class="tmg--outer-b-1">Eine rahmenlose PoseidonPalace Echtglasdusche
-ist Korrosionsbeständig und Easy-to-clean. Ein
-Abzieher und ein Pflegeset helfen Ihnen, die Pflege
-zu erleichtern und diese Eigenschaften langfristig zu
-erhalten.</p>
+                        <h2 class="amber-text text-darken-3 tmg--outer-b-1">Qualität</h2>
+                        <p class="tmg--outer-b-1">Qualität ist unser höchstes Gut. Wir möchten, dass unsere Kunden zufrieden sind und dauerhaft mit ihnen zusammen arbeiten. Dafür ist eine konstant hohe Qualität zu gewährleisten unerlässlich. </p>
+                        <p class="tmg--outer-b-1">Das zertifizierte Qualitätsmanagement ISO 9001:2015 haben wir erfolgreich abgeschlossen. Die entsprechende Dokumentation steht in Kürze zur Verfügung. </p>
+                        <img src="img/cert/logo_din_iso_9001-blue-300x233.png" style="max-width: 140px;" class="tmg--outer-b-1"/>
+                        <p class="tmg--outer-b-1">Unterschiedliche Prüf/Messdokumente können jederzeit erstellt werden. Hierbei arbeiten wir mit der Partnerfirma ITS zusammen. ITS ist zertifiziert nach DIN ISO 9001:2015 und akkreditiert gemäß DAkkS nach DIN EN ISO/IEC 17025:2005.</p>
+                        <div><a href="https://www.its-team.de" target="_blank" data-pg-collapsed><img src="img/logo/ITS_Logo.png" style="max-width: 200px;"/></a>
+                        </div>
                     </article>
                 </div>
             </section>
             <section class="tmg--inner-t-1 tmg__area white" data-pg-name="News" data-scroll-index="8" aria-label>
-                <h2 class="blue-grey-text text-darken-4 tmg--inner-lr-2">Konfigurator und Shop</h2>
+                <h2 class="amber-text text-darken-3 tmg--inner-lr-2">News bei TMCK</h2>
                 <div class="tmg__module--Flex tmg-two-900">
                     <article class="tmg--inner-2" id="news">
-                        <img src="img/article/der-konfigurator.jpg"/>
-                        <h2 class="blue-grey-text text-darken-4 tmg--inner-t-1 tmg--outer-b-1">Konfigurator</h2>
-                        <h3 class="blue-grey-text text-darken-4 tmg--outer-b-1">Konfigurieren Sie Ihre Dusche</h3>
-                        <p class="tmg--outer-b-2">Hier haben Sie die Möglichkeit, völlig unverbindlich Ihre neue Dusche in wenigen Klicks entstehen zu lassen</p><a class="amber darken-1 float-button-light tmG--button_end tmg--outer-b-2 white-text" data-pg-name="Link Konfigurator" href="http://glasdusche.flexotec.de/duschenkonfigurator/" title="Konfigurieren Sie Ihre neue Dusche">Zum Konfigurator</a>
+                        <img src="img/article/news_artikel-1_neubau-1.jpg"/>
+                        <h2 class="amber-text text-darken-3 tmg--inner-t-1 tmg--outer-b-1">Wir sind umgezogen.</h2>
+                        <h3 class="amber-text text-darken-3 tmg--outer-b-1">Neue Firmenadresse – bekannte Leistungen! </h3>
+                        <p class="tmg--outer-b-2">In jedem Unternehmen bedeutet Wachstum auch Veränderung. Nach Firmengründung im Jahr 2018
+und über 4 Jahren Tätigkeit in Freudenstadt, hat die TMCK 4.0 GmbH ihren Sitz ins wenige Kilometer
+entfernte Dornhan verlegt.<br/><br/>TMCK 4.0 GmbH<br/>Otto-Hahn-Straße 7<br/>72175 Dornhan<br/></p>
                     </article>
                     <article class="tmg--inner-2">
-                        <img src="img/article/der-shop.jpg"/>
-                        <h2 class="blue-grey-text text-darken-4 tmg--inner-t-1 tmg--outer-b-1">Shop</h2>
-                        <h3 class="blue-grey-text text-darken-4 tmg--outer-b-1">Nützliches rund um Ihre Dusche</h3>
-                        <p class="tmg--outer-b-2">Hier erhalten Sie nützliche Accessoires rund um Ihre rahmenlose Poseidon-Palace Glasdusche</p>
-                        <a class="amber darken-1 float-button-light tmG--button_end tmg--outer-b-2 white-text" data-pg-name="Link Shop" href="http://glasdusche.flexotec.de/shop/" title="Unser Shop">Zum Shop</a>
+                        <img src="img/article/news_artikel-2_werkzeug.jpg"/>
+                        <h2 class="amber-text text-darken-3 tmg--inner-t-1 tmg--outer-b-1">Normteile</h2>
+                        <h3 class="amber-text text-darken-3 tmg--outer-b-1">Clevere Beschaffung beim Systemlieferanten</h3>
+                        <p class="tmg--outer-b-2">Für ihre Normalien brauchen Werkzeugbauer verlässliche Partner. TMCK 4.0 aus Freudenstadt geht dabei noch einen Schritt weiter und hat Fibro als Systemlieferanten ausgewählt. Die besonders enge Zusammenarbeit bringt Vorteile für beide Seiten.</p>
+                        <a class="amber darken-3 float-button-light tmG--button_end tmg--outer-b-2 white-text" data-pg-name="Link Normteile" href="https://www.blechnet.com/clevere-beschaffung-beim-systemlieferanten-a-1111417/" title="Clevere Beschaffung beim Systemlieferanten">Artikel lesen</a>
                     </article>
                 </div>
             </section>
         </main>
-        <footer data-scroll-index="9" data-pgc-define="Footer Flexotec" data-pgc-define-name="Footer Flexotec" data-pgc-define-description="The footer to use as comp" data-pgc-define-photo-preview-only>
+        <footer data-pgc-define="Footer" data-pgc-define-name="Footer" data-pgc-define-photo-preview-only data-scroll-index="9" data-pg-collapsed>
             <section class="tmg--inner-2 blue-grey darken-4" data-pg-name="Sitemap">
-                <div class="tmg__area--width">
+                <div class="tmg__area--width" data-pg-collapsed>
                     <h2 class="tmg--inner-lr-1 blue-grey-text tmg--outer-b-1 text-lighten-1">Kontakt</h2>
-                    <div class="sitemap-if-dark tmg__module--Flex tmg-one tmg-two-900 tmg-four-1200">
+                    <div class="sitemap-if-dark tmg__module--Flex tmg-one tmg-two-900 tmg-four-1200" data-pg-collapsed>
                         <div class="tmg--inner-1" data-pg-name="Grid-2">
                             <p class="blue-grey-text tmg--outer-b-1 text-lighten-1">Unsere Anschrift:</p>
-                            <p class="blue-grey-text text-lighten-3">Flexotec GmbH<br/>Im Öschle 1<br/>78736 Epfendorf<br/><br/>Tel.&nbsp;07404/914 440<br/>FAX&nbsp;07404/914 440<br/><br/><a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u0066\u006c\u0065\u0078\u006f\u0074\u0065\u0063\u002e\u0064\u0065';void 0">Mail an Flexotec</a></p>
+                            <p class="blue-grey-text text-lighten-3">TMCK 4.0 GmbH<br/>Otto-Hahn-Straße 7<br/>72175 Dornhan<br/><br/>Tel.&nbsp;07455/914 65-30<br/>FAX&nbsp;07455/914 65-38<br/><br/><a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u0074\u006d\u0063\u006b\u002d\u0067\u006d\u0062\u0068\u002e\u0064\u0065';void 0">e-Mail an TMCK</a></p>
                         </div>
                         <div class="tmg--inner-1" data-pg-name="Grid-1">
                             <p class="blue-grey-text tmg--outer-b-1 text-lighten-1">Die Seiten, die zu unserem Webauftritt gehören:</p>
@@ -200,7 +217,7 @@ erhalten.</p>
                 <section id="google-map" data-pg-name="Google Map">
 </section>
             </section>
-            <p class="tmg--inner-2 darken-4 blue-grey-text text-lighten-4 tmg__copyright black" data-pg-name="Copyright">© Flexotec GmbH - All rights reserved</p>
+            <p class="tmg--inner-2 darken-4 blue-grey-text text-lighten-4 tmg__copyright black" data-pg-name="Copyright">© TMCK 4.0 - All rights reserved</p>
             <a href="#" class="show back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
         </footer>
         <!-- TheMagicScript has jQuery included by default -->
